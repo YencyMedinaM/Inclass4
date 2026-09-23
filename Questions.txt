@@ -1,0 +1,23 @@
+Undergraduate Question 1
+Your recipe page must remain readable at a 320px viewport without horizontal scrolling. 
+Using the actual content in your starter file, determine whether the ingredients should use a row, a wrapping row, or a column at that width. 
+Predict what will happen to the widest item, then defend your choice by tracing the effects of flex-direction, flex-wrap, flex-basis, and available width. 
+State one tradeoff your solution creates at a wider viewport.
+
+/* Answer */
+At a 320px viewport, the ingredients should use a wrapping row, so the items can move to another line when there is not enough space horizontally. 
+The widest ingredient would most likely wrap onto its own line rather than forcing the page to scroll horizontally. 
+flex-basis determines how much space each item needs, while flex-wrap makes it so that items that exceed the available width can move to the next line. 
+The main tradeoff is that at wider viewports, wrapping could create multiple rows or unused horizontal space.
+
+Undergraduate Question 2
+One Tic-Tac-Toe square contains a long label and causes the board to become wider than intended. 
+Without changing the HTML, identify whether the fault is caused by the grid container, the grid track definition, or the square's internal alignment. 
+Use a browser observation to support your diagnosis, propose the smallest CSS correction, and explain why the correction preserves a centered 3x3 board.
+
+/* Answer2 */
+The problem is caused by the grid track definition. 
+In the browser we can see the column get wider because of the content size.
+The smallest correction would be to use grid-template-columns: repeat(3, minmax(0, 1fr));, 
+which would allow for each column to shrink while still dividing the available space equally. 
+This stops the long label from expanding the board and preserves a centered, evenly sized 3×3 grid.
