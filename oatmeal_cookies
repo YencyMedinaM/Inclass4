@@ -67,8 +67,15 @@ header {
 	justify-content: space-between;
 }
 
+.summary > img {
+	box-shadow: 5px 5px 10px #888;
+	border-radius: 20px;
+}
+
 .related-content {
    margin-left: 100px;
+	flex-grow: 1;
+	flex-basis: 45%;
 }
 
 .ingredients {
