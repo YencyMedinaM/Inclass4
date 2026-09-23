@@ -14,6 +14,7 @@ header {
 	 justify-content: space-between;
 }
 
+
 .logo {
    color: #BD4F6C;
    font-size: 18px;
@@ -25,7 +26,7 @@ header {
 	 flex-wrap: wrap;
 }
 
-.main-content{
+.main-content {
 	display: flex;
 	flex-wrap: wrap;
 	flex-grow: 1;
@@ -62,8 +63,20 @@ header {
    color: #BD4F6C;
    padding: 5px;
    width: 210px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .related-content {
    margin-left: 100px;
+}
+
+.ingredients {
+	flex-grow: 1;
+	flex-basis: 45%;
+}
+
+.directions {
+	flex-grow: 1;
+	flex-basis: 45%;
 }
